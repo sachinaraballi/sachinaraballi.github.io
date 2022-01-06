@@ -1,66 +1,98 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <basefont size="10">
-      <link rel="shortcut icon" href="favicon.ico" />
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="sachin araballi personal webiste">
-      <meta name="author" content="sachin araballi">
+<!DOCTYPE html>
+<html lang="en">
 
-      <title>Sachin Araballi Rabkavi</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
-      <link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  <!-- external css -->
+  <!-- past only the external css used like cdns and stuff  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
 
-    </head>
-    <body>
+  <!-- internal css -->
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <div class="container">
-      <div class="jumbotron">
-      <div class="row">
-      <div class="col-md-9">
-        <h1 align="center" >Sachin Araballi Rabkavi</h1>        
-    	</div>
-      </div>
-      </div>
+  <!-- fonts -->
+  <!-- paste the font cdns here !  -->
 
-    <div class="navbar navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container">  
-          <div class="nav-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="./sachin_araballi_resume_06_18.pdf" target="_blank">CV</a></li>
-              <li><a href ="https://github.com/sachinaraballi" target="_blank">Projects</a></li>
-              <li><a href="https://www.hackerrank.com/sachinaraballi" target="_blank">HackerRank</a></li>  
-              <li><a href="http://ijarcet.org/wp-content/uploads/IJARCET-VOL-3-ISSUE-12-4337-4342.pdf" target="_blank">Research</a></li>
-              <li><a href="https://sachinaraballi.blogspot.in/" target="_blank">Blogs</a></li>
-              <li><a href="./drawings.html">Hobbies</a></li>            
-            </ul>
-          </div>
-        </div>
+  <title>👋🏻 Sachin Araballi</title>
+</head>
+
+<body>
+  <div class="loader-wrapper">
+    <div class="loader">
+      <h1 class="loader-heading" id="loader_heading">Sachin Araballi</h1>
+      <div class="loader-inner">
+        <div class="loader-bar"></div>
       </div>
     </div>
+  </div>
 
-
-
-    <table width="100%">
-      <tr>
-        <td width="70%">
-          <div class="well">
-            <b>A Software Engineer from Bangalore. Currently associated with Samsung Research Institute Bangalore. </b>
-          </div>           
-        </td>
-        <td width="40%">
-        <div> 
-         <p align="center"><img border="0" src="./bootstrap/img/sachin.jpg" width="200" height="200"><br/>
+  <section class="section-one">
+    <div class="bg-text">ML/Data</div>
+    <div class="hero-one">
+      <h1 class="section-1-header">
+        Sachin <br />
+        Araballi
+      </h1>
+      <div class="social-container">
+        <ul>
+          <li>
+            <a href="https://github.com/sachinaraballi" class="social-link">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sachinaraballi/" class="social-link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/araballisachin" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="btn-container">
+        <button class="my-resume hero-btn" id="resume" onclick="window.open('Araballi_Sachin_Resume_Bigdata.pdf'); return true;">My Resume</button>
+        <button class="my-work hero-btn" id="my_work" >My Work</button>
+        <button class="my-work hero-btn" id="hobbies" onclick="window.open('drawings.html'); return true;">Hobbies</button>
+      </div>
+    </div>
+  </section>
+  <section class="section-two">
+    <div class="work-container">
+      <div class="projects">
+        <div class="project-desc">
+          <h1 class="project-title">Matching Engine</h1>
+          <p class="project-details">
+            Built Apache Spark-based Data Matching Tool, which uses the clustering method to group records and compares
+            the records
+            based on match rules. Millions of customer records are matched using Spark and Oracle Cloud Infrastructure
+            which helps
+            the customers to match their data in less time compared to legacy tools.
+          </p>
+          <!--a href="#"><button class="more-about-the-project">To the Project ? <i class="fab fa-github-alt"></i>
+            </button></a-->
         </div>
+        <div class="project-gif"><img src="" /></div>
+      </div>
+    </div>
+    <button class="back-page" id="back_btn">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+  </section>
 
-        </td>
-      </tr>
-    </table>
-     
-      
-    </body>
-    </html>
+  <!-- external js  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+    integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- internal js -->
+  <script src="./js/gsap.anim.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
